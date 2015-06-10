@@ -9,4 +9,4 @@ RUN git clone https://github.com/etsy/statsd.git && \
 
 WORKDIR /root/statsd
 
-ENTRYPOINT ["node", "stats.js"]
+CMD ["node", "stats.js", "/etc/config.js"]
