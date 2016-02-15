@@ -2,7 +2,7 @@
 
 Dockerized version of statsd with librato backend.
 
-#@ Instructions
+## Instructions
 
 1. Build the image as per usual:
 
