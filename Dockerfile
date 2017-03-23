@@ -6,7 +6,7 @@ WORKDIR /root/
 RUN git clone https://github.com/etsy/statsd.git && \
     cd statsd && git reset --hard v0.7.2 && \
     apk del git && \
-    npm install statsd-librato-backend
+    npm install statsd-librato-backend statsd-datadog-backend
 
 WORKDIR /root/statsd
 
