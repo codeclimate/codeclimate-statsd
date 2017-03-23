@@ -1,6 +1,6 @@
 # codeclimate-statsd
 
-Dockerized version of statsd with librato backend.
+Dockerized version of statsd with librato and datadog backend.
 
 ## Instructions
 
