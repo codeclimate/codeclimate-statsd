@@ -1,9 +1,9 @@
-FROM mhart/alpine-node:6.10.1
+FROM alpine:edge
 
+RUN apk --update add nodejs git
 WORKDIR /root/
 
-RUN apk --update add git && \
-    git clone https://github.com/etsy/statsd.git && \
+RUN git clone https://github.com/etsy/statsd.git && \
     cd statsd && git reset --hard v0.7.2 && \
     npm install \
       codeclimate/aws-cloudwatch-statsd-backend#a3981840 \
